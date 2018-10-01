@@ -4,7 +4,7 @@ import './index.css';
 
 //Props is how information is passed from parent to child. Attributes in HTML
 
-//State is how components remember things/a component's conscious
+//State === memory, how components remember things/a component's conscious
 
 //component 1
 class Square extends React.Component {
