@@ -5,6 +5,9 @@ Props is how information is passed from parent to child. Attributes in HTML
 
 State === memory, how components remember things/a component's conscious
 
+Immutability - method of working with data, where you keep the original clean, working of a copy of the original. Easier to detect changes
+
+Functional component - only contains a render method, no state. 
 
 Javascript methods
 

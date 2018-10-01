@@ -6,18 +6,17 @@ import './index.css';
 
 //State === memory, how components remember things/a component's conscious
 
-//component 1
-class Square extends React.Component {
-  render() {
-    return (
-      <button 
-        className="square" 
-        onClick={() => this.props.onClick()} //setState auto updates component when clicked
-        >
-       {this.props.value}
-      </button>
-    );
-  }
+//component 1 - functional component
+function Square(props) {
+  return (
+    
+    <button   
+      className="square" onClick={props.onClick} >
+
+      {props.value}
+    
+    </button>
+  )
 }
 
 //component 2
@@ -27,6 +26,12 @@ class Board extends React.Component {
     this.state = {
       squares: Array(9).fill(null),
     };
+  }
+
+  handleClick(i) {
+    const squares = this.state.squares.slice(); //create a new array
+    squares[i] = 'X'; //mark X for square clicked
+    this.setState({squares: squares}); // update squares 'memory'
   }
 
   renderSquare(i) {
