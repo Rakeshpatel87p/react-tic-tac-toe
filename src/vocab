@@ -1,0 +1,13 @@
+
+React-speak
+
+Props is how information is passed from parent to child. Attributes in HTML
+
+State === memory, how components remember things/a component's conscious
+
+
+Javascript methods
+
+.slice(i) 
+	-make a shallow copy of array
+	-create new array, beginning at i. 
