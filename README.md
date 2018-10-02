@@ -1,1 +1,1 @@
-reviewing react tutorial, brushing react concepts. 
+reviewing react tutorial, brushing up on react concepts before nanodegree. 
